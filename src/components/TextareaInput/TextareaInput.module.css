@@ -1,0 +1,14 @@
+.input {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+.input:focus{
+    outline: none;
+}
+.label {
+    font-size: 0.9rem;
+    color: black;
+}
