@@ -1,0 +1,29 @@
+{
+  "name": "inputify",
+  "version": "1.0.0",
+  "description": "Custom input (and utils) lib.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luc-silva/Inputify.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "input"
+  ],
+  "author": "Lucas Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luc-silva/Inputify/issues"
+  },
+  "homepage": "https://github.com/luc-silva/Inputify#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^4.9.4",
+    "@types/react": "^18.2.12"
+  }
+}
