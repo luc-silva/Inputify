@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./TextInput.module.css";
 
+type InputType = "text" | "email";
 interface ITextInput extends ICustomInputProps {
     stateValue: string;
+    inputType?: InputType;
 }
 
 export const TextInput = ({
@@ -12,6 +14,7 @@ export const TextInput = ({
     placeholder = false,
     placeholderText,
     required = false,
+    inputType = "text",
     stateValue,
     onChange,
 }: ITextInput) => {
@@ -23,7 +26,7 @@ export const TextInput = ({
                 </label>
             )}
             <input
-                type="text"
+                type={inputType}
                 name={inputName}
                 className={styles[".input"]}
                 placeholder={placeholder ? placeholderText : undefined}
