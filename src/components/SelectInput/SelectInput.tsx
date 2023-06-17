@@ -1,4 +1,5 @@
 import React from "react";
+import { ICustomInputProps } from "../../types";
 import styles from "./SelectInput.module.css";
 
 interface ISelectInput extends ICustomInputProps {

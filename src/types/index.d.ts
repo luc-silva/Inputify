@@ -1,15 +1,3 @@
-/**
- * Base interface shared between multiples inputs.
- */
-interface ICustomInputProps {
-    placeholder?: boolean;
-    placeholderText?: string;
-    label?: boolean;
-    labelText?: string;
-    inputName: string;
-    required?:boolean;
-    onChange: React.ChangeEventHandler
-}
 
 /**
  * React CSS Modules type definition.
@@ -17,4 +5,17 @@ interface ICustomInputProps {
 declare module "*.module.css" {
     const classes: { [key: string]: string };
     export default classes;
+}
+
+/**
+ * Base interface shared between multiples inputs.
+ */
+export interface ICustomInputProps {
+    placeholder?: boolean;
+    placeholderText?: string;
+    label?: boolean;
+    labelText?: string;
+    inputName: string;
+    required?:boolean;
+    onChange: React.ChangeEventHandler
 }

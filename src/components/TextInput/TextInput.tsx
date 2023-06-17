@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./TextInput.module.css";
+import { ICustomInputProps } from "../../types";
 
 type InputType = "text" | "email";
 interface ITextInput extends ICustomInputProps {
-    stateValue: string;
+    stateValue: any;
     inputType?: InputType;
 }
 

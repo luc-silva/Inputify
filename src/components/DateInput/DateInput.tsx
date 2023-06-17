@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./DateInput.module.css";
+import { ICustomInputProps } from "../../types";
 
 interface IDateInput extends ICustomInputProps {
     stateValue: string;
