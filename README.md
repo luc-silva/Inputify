@@ -2,6 +2,8 @@
 
 Custom HTML inputs library.
 
+THIS IS JUST A TEST. learning how to config it :)
+
 ## About
 
 Ive made this lib just to reuse the component in my own projects. Theres nothing really especial in it.

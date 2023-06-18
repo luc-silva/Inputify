@@ -6,7 +6,7 @@ interface ITextareaInput extends ICustomInputProps {
     stateValue: any;
 }
 
-export const TextareaInput = ({
+const TextareaInput = ({
     inputName,
     label = false,
     labelText,
@@ -34,3 +34,5 @@ export const TextareaInput = ({
         </>
     );
 };
+
+export default TextareaInput;

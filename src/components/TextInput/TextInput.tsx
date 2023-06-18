@@ -8,7 +8,7 @@ interface ITextInput extends ICustomInputProps {
     inputType?: InputType;
 }
 
-export const TextInput = ({
+const TextInput = ({
     inputName,
     label = false,
     labelText,
@@ -38,3 +38,5 @@ export const TextInput = ({
         </>
     );
 };
+
+export default TextInput;

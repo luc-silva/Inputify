@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./DateInput.module.css";
 import { ICustomInputProps } from "../../types";
+import styles from "./DateInput.module.css";
 
 interface IDateInput extends ICustomInputProps {
     stateValue: string;
 }
 
-export const DateInput = ({
+const DateInput = ({
     inputName,
     label = false,
     labelText,
@@ -35,3 +35,4 @@ export const DateInput = ({
         </>
     );
 };
+export default DateInput;

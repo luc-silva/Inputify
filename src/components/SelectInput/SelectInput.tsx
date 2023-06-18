@@ -5,7 +5,7 @@ import styles from "./SelectInput.module.css";
 interface ISelectInput extends ICustomInputProps {
     options: any[];
 }
-export const SelectInput = ({
+const SelectInput = ({
     inputName,
     label = false,
     labelText,
@@ -36,3 +36,6 @@ export const SelectInput = ({
         </>
     );
 };
+
+export default SelectInput;
+
