@@ -1,14 +1,12 @@
-import React from "react";
 import styles from "./TextInput.module.css";
-import { ICustomInputProps } from "../../types";
+import { ICustomInput, ICustomInputProps } from "../../types";
 
-type InputType = "text" | "email";
 interface ITextInput extends ICustomInputProps {
     stateValue: any;
-    inputType?: InputType;
+    inputType?: "text" | "email";
 }
 
-const TextInput = ({
+const TextInput:ICustomInput<ITextInput> = ({
     inputName,
     label = false,
     labelText,
@@ -18,7 +16,7 @@ const TextInput = ({
     inputType = "text",
     stateValue,
     onChange,
-}: ITextInput) => {
+}) => {
     return (
         <>
             {label && (

@@ -1,11 +1,10 @@
-import React from "react";
-import { ICustomInputProps } from "../../types";
+import { ICustomInput, ICustomInputProps } from "../../types";
 import styles from "./SelectInput.module.css";
 
 interface ISelectInput extends ICustomInputProps {
     options: any[];
 }
-const SelectInput = ({
+const SelectInput: ICustomInput<ISelectInput> = ({
     inputName,
     label = false,
     labelText,
@@ -14,7 +13,7 @@ const SelectInput = ({
     required = false,
     options,
     onChange,
-}: ISelectInput) => {
+}) => {
     return (
         <>
             {label && (
@@ -38,4 +37,3 @@ const SelectInput = ({
 };
 
 export default SelectInput;
-

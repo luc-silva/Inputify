@@ -1,5 +1,7 @@
+import React from "react";
+
 /**
- * Base interface shared between multiples inputs.
+ * Base interface for props shared between multiples inputs.
  */
 export interface ICustomInputProps {
     placeholder?: boolean;
@@ -10,3 +12,8 @@ export interface ICustomInputProps {
     required?:boolean;
     onChange: React.ChangeEventHandler
 }
+
+/**
+ * Base type declarion for custom inputs.
+ */
+export type ICustomInput<T> = (props:ICustomInputProps & T) => JSX.Element

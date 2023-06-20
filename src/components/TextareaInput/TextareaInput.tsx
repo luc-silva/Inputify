@@ -1,12 +1,11 @@
-import React from "react";
 import styles from "./TextareaInput.module.css";
-import { ICustomInputProps } from "../../types";
+import { ICustomInput, ICustomInputProps } from "../../types";
 
 interface ITextareaInput extends ICustomInputProps {
     stateValue: any;
 }
 
-const TextareaInput = ({
+const TextareaInput: ICustomInput<ITextareaInput> = ({
     inputName,
     label = false,
     labelText,
@@ -15,7 +14,7 @@ const TextareaInput = ({
     required = false,
     stateValue,
     onChange,
-}: ITextareaInput) => {
+}) => {
     return (
         <>
             {label && (
