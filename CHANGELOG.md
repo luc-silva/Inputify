@@ -1,8 +1,7 @@
-## [1.2.0] - 2023-06-20
+## [1.2.1] - 2023-06-21
+
+### Fixed
+- Fix components not being imported correctly.
 
 ### Added
-- New typescript interface: `ICustomInput`.
-- CHANGELOG markdown file.
-
-### Removed
-- Removed the `InputType` type from TextInput file. It is no longer needed.
+- npmignore file.
