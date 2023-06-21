@@ -1,5 +1,6 @@
-import styles from "./TextInput.module.css";
 import { ICustomInput, ICustomInputProps } from "../../types";
+
+import styles from "./TextInput.module.css";
 
 interface ITextInput extends ICustomInputProps {
     stateValue: any;
@@ -20,14 +21,14 @@ const TextInput:ICustomInput<ITextInput> = ({
     return (
         <>
             {label && (
-                <label htmlFor={inputName} className={styles[".label"]}>
+                <label htmlFor={inputName} className={styles["label"]}>
                     {labelText}
                 </label>
             )}
             <input
                 type={inputType}
                 name={inputName}
-                className={styles[".input"]}
+                className={styles["input"]}
                 placeholder={placeholder ? placeholderText : undefined}
                 required={required}
                 value={stateValue}

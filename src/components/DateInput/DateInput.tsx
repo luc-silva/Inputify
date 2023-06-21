@@ -1,4 +1,5 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
+
 import styles from "./DateInput.module.css";
 
 interface IDateInput extends ICustomInputProps {
@@ -18,14 +19,14 @@ const DateInput: ICustomInput<IDateInput> = ({
     return (
         <>
             {label && (
-                <label htmlFor={inputName} className={styles[".label"]}>
+                <label htmlFor={inputName} className={styles["label"]}>
                     {labelText}
                 </label>
             )}
             <input
                 type="date"
                 name={inputName}
-                className={styles[".input"]}
+                className={styles["input"]}
                 placeholder={placeholder ? placeholderText : undefined}
                 required={required}
                 value={stateValue}

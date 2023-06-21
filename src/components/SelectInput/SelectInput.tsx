@@ -1,4 +1,5 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
+
 import styles from "./SelectInput.module.css";
 
 interface ISelectInput extends ICustomInputProps {
@@ -17,13 +18,13 @@ const SelectInput: ICustomInput<ISelectInput> = ({
     return (
         <>
             {label && (
-                <label htmlFor={inputName} className={styles[".label"]}>
+                <label htmlFor={inputName} className={styles["label"]}>
                     {labelText}
                 </label>
             )}
             <select
                 name={inputName}
-                className={styles[".input"]}
+                className={styles["input"]}
                 placeholder={placeholder ? placeholderText : undefined}
                 required={required}
                 onChange={onChange}
