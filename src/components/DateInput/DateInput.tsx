@@ -1,6 +1,6 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
 
-import styles from "./DateInput.module.css";
+import styles from "../style/CustomInput.module.css";
 
 /**
  * Represents a custom date input component.
