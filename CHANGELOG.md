@@ -1,7 +1,9 @@
-## [1.2.1] - 2023-06-21
+## [1.3.0] - 2023-06-22
 
-### Fixed
-- Fix components not being imported correctly.
+### Changes 
+- Now all components share just one CSS module file.
 
 ### Added
-- npmignore file.
+- JSDoc for components and its types.
+- NumberInput component and its types.
+- PasswordInput component and its types.
