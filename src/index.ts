@@ -1,1 +1,1 @@
-export { DateInput, SelectInput, TextInput, TextareaInput, PasswordInput } from "./components";
+export { DateInput, SelectInput, TextInput, TextareaInput, PasswordInput, NumberInput } from "./components";
