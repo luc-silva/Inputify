@@ -1,8 +1,10 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
 
-import styles from "./TextareaInput.module.css";
+import styles from "../style/CustomInput.module.css";
 
 interface ITextareaInput extends ICustomInputProps {
+    maxLength: number;
+    minLength?: number
     stateValue: any;
 }
 
@@ -14,6 +16,8 @@ const TextareaInput: ICustomInput<ITextareaInput> = ({
     placeholderText,
     required = false,
     stateValue,
+    maxLength,
+    minLength = 0,
     onChange,
 }) => {
     return (
@@ -29,6 +33,8 @@ const TextareaInput: ICustomInput<ITextareaInput> = ({
                 placeholder={placeholder ? placeholderText : undefined}
                 required={required}
                 value={stateValue}
+                maxLength={maxLength}
+                minLength={minLength}
                 onChange={onChange}
             />
         </>

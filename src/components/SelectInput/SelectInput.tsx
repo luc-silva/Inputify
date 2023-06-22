@@ -1,6 +1,6 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
 
-import styles from "./SelectInput.module.css";
+import styles from "../style/CustomInput.module.css";
 
 interface ISelectInput extends ICustomInputProps {
     options: any[];

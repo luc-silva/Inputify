@@ -1,10 +1,12 @@
 import { ICustomInput, ICustomInputProps } from "../../types";
 
-import styles from "./TextInput.module.css";
+import styles from "../style/CustomInput.module.css";
 
 interface ITextInput extends ICustomInputProps {
     stateValue: any;
     inputType?: "text" | "email";
+    maxLength: number
+    minLength?: number
 }
 
 const TextInput:ICustomInput<ITextInput> = ({
@@ -16,6 +18,8 @@ const TextInput:ICustomInput<ITextInput> = ({
     required = false,
     inputType = "text",
     stateValue,
+    maxLength,
+    minLength = 0,
     onChange,
 }) => {
     return (
@@ -33,6 +37,8 @@ const TextInput:ICustomInput<ITextInput> = ({
                 required={required}
                 value={stateValue}
                 onChange={onChange}
+                maxLength={maxLength}
+                minLength={minLength}
             />
         </>
     );
