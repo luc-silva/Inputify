@@ -10,6 +10,10 @@ interface ISelectInput extends ICustomInputProps {
      * The available options for the select input.
      */
     options: any[];
+    /**
+     * The value of the input state. Should be respective to the first value of an options array.
+     */
+    stateValue: any;
 }
 
 /**
@@ -31,6 +35,7 @@ const SelectInput: ICustomInput<ISelectInput> = ({
     placeholderText,
     required = false,
     options,
+    stateValue,
     onChange,
 }) => {
     return (
@@ -44,6 +49,7 @@ const SelectInput: ICustomInput<ISelectInput> = ({
                 name={inputName}
                 className={styles["input"]}
                 placeholder={placeholder ? placeholderText : undefined}
+                value={stateValue}
                 required={required}
                 onChange={onChange}
             >
